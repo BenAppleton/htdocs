@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Read the Haukai Restaurant blog today">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Blog</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar" aria-label="Primary Navigation">
+                <div class="nav-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Haukai Restaurant Logo" width="500" height="250"></a>
+                </div>
+                <!-- Hamburger Menu Icon -->
+                <button class="hamburger" id="header-hamburger" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="header-nav-links" class="active">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="booking.html">Make a booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="hours.html">Hours</a></li>
+                    <li><a href="blog.html" class="singleactive">Blog</a></li>
+                    <li><a href="staffportal.html">Staff Login</a></li>
+                </ul>
+            </nav>
+        </header>
+            <main>
+                <div class="blog-headline">
+                    <h1>Haukai News</h1>
+                    <hr>
+                </div>
+                <div class="heroimage">
+                    <img src="images/homepagehero.webp" class="imagehero" alt="This is a picture of outside the restaurant" width="600" height="700">
+                    <div class="search-container" role="search" aria-label="Search Blogs">
+                        <!--For ARIA labels of the search text box the label text will be hidden by css-->
+                        <label for="blogSearch" class="visually-hidden">Search Blogs</label>
+                        <input type="text" id="blogSearch" placeholder="Search Blogs...">
+                    </div>
+                    <div class="filter-container">
+                        <select id="blogFilter" aria-label="Filter Blogs">
+                            <option value="all">Filter By: (all)</option>
+                            <option value="recipes">Filter By: (Recipes)</option>
+                            <option value="cultural">Filter By: (Cultural)</option>
+                        </select>
+                    </div>
+                </div>
+                    <article id="row1">
+                        <!-- Blog 1 -->
+                        <div class="blog" tabindex="0" role="article">
+                            <div class="blogimage">
+                                <a href="#">
+                                    <img src="images/recipesblog.webp" alt="this is an image recipes blog thumbnail" width="600" height="700">
+                                </a>
+                            </div>
+                            <div class="blogtext">
+                                <div class="blog-tag recipes">Recipes</div>
+                                <h2>Recipes Blog 1</h2>
+                                <p>We believe that food and culture align with one another</p>
+                                <p>That's why with every plate we ensure that it tells a cultural story</p>
+                                <p>Book a table today for the experience of a lifetime</p>
+                            </div>
+                        </div>
+                        <!-- Blog 2 -->
+                        <div class="blog" tabindex="0" role="article">
+                            <div class="blogimage">
+                                <a href="#">
+                                    <img src="images/culturalblog.webp" alt="this is an image cultural blog thumbnail" width="600" height="700">
+                                </a>
+                            </div>
+                            <div class="blogtext">
+                                <div class="blog-tag cultural">Cultural</div>
+                                <h2>Cultural Blog 1</h2>
+                                <p>We believe that food and culture align with one another</p>
+                                <p>That's why with every plate we ensure that it tells a cultural story</p>
+                                <p>Book a table today for the experience of a lifetime</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="row2">
+                        <!-- Blog 3 -->
+                        <div class="blog" tabindex="0" role="article">
+                            <div class="blogimage">
+                                <a href="#">
+                                    <img src="images/recipesblog.webp" alt="this is an image recipes blog thumbnail" width="600" height="700">
+                                </a>
+                            </div>
+                            <div class="blogtext">
+                                <div class="blog-tag recipes">Recipes</div>
+                                <h2>Recipes Blog 2</h2>
+                                <p>We believe that food and culture align with one another</p>
+                                <p>That's why with every plate we ensure that it tells a cultural story</p>
+                                <p>Book a table today for the experience of a lifetime</p>
+                            </div>
+                        </div>
+                        <!-- Blog 4 -->
+                        <div class="blog" tabindex="0" role="article">
+                            <div class="blogimage">
+                                <a href="#">
+                                    <img src="images/culturalblog.webp" alt="this is an image cultural blog thumbnail" width="600" height="700">
+                                </a>
+                            </div>
+                            <div class="blogtext">
+                                <div class="blog-tag cultural">Cultural</div>
+                                <h2>Cultural Blog 2</h2>
+                                <p>We believe that food and culture align with one another</p>
+                                <p>That's why with every plate we ensure that it tells a cultural story</p>
+                                <p>Book a table today for the experience of a lifetime</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Load More Button -->
+                    <button id="loadMore">Load More</button>
+                    <article id="row3">
+                        <!-- Blog 5 -->
+                        <div class="blog" id="blog5" tabindex="0" role="article">
+                            <div class="blogimage">
+                                <a href="#">
+                                    <img src="images/recipesblog.webp" alt="this is an image recipes blog thumbnail" width="600" height="700">
+                                </a>
+                            </div>
+                            <div class="blogtext">
+                                <div class="blog-tag recipes">Recipes</div>
+                                <h2>Recipes Blog 3</h2>
+                                <p>We believe that food and culture align with one another</p>
+                                <p>That's why with every plate we ensure that it tells a cultural story</p>
+                                <p>Book a table today for the experience of a lifetime</p>
+                            </div>
+                        </div>
+                        <!-- Blog 6 -->
+                        <div class="blog" tabindex="0" role="article">
+                            <div class="blogimage">
+                                <a href="#">
+                                    <img src="images/culturalblog.webp" alt="this is an image cultural blog thumbnail" width="600" height="700">
+                                </a>
+                            </div>
+                            <div class="blogtext">
+                                <div class="blog-tag cultural">Cultural</div>
+                                <h2>Cultural Blog 3</h2>
+                                <p>We believe that food and culture align with one another</p>
+                                <p>That's why with every plate we ensure that it tells a cultural story</p>
+                                <p>Book a table today for the experience of a lifetime</p>
+                            </div>
+                        </div>
+                    </article>
+                <div id="progressBarContainer">
+                    <div id="progressBar"  role="progressbar" aria-label="Progress: 65%"></div>
+                </div>
+            </main>
+
+            <footer>
+                <nav class="navbar" aria-label="Footer Navigation">
+                    <div class="nav-logo">
+                        <a href="index.html"><img src="images/logo.png" alt="Haukai Restaurant Logo" width="500" height="250"></a>
+                    </div>
+                    <!-- Hamburger Menu Icon -->
+                    <button class="hamburger" id="footer-hamburger" aria-label="Open navigation menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <!-- Navigation Links with 'active' class added manually for testing -->
+                    <ul id="footer-nav-links" class="active">
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="booking.html">Make a booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="hours.html">Hours</a></li>
+                        <li><a href="blog.html" class="singleactive">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-text" tabindex="0">
+                    &copy; Haukai Restaurant 2024
+                </div>
+            </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>

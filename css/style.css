@@ -1,0 +1,731 @@
+/* >>>>>>> Global settings - Headers footers navigation <<<<<<<< */
+/* This section is for the global settings for the website */
+*{
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(78, 78, 78);
+    margin-bottom: 10px;
+}
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(78, 78, 78);
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+.footer-text {
+    margin-left: 20px;
+    color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(78, 78, 78);
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: rgb(34, 34, 34);
+}
+.navbar a.singleactive {
+    background-color: rgb(8, 8, 8);
+}
+.nav-logo img {
+    max-height: 75px;
+    width: auto;
+}
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0; /* This creates space between the lines */
+}
+body {
+    margin: 0px;
+    background-color: rgb(231, 238, 253);
+    font-family: Verdana, Geneva, sans-serif;
+    color: black;
+}
+p {
+    font-size: 1.10em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.875em;
+}
+
+h3 {
+    font-size: 1.563em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+hr {
+    height: 0.1em;
+    background-color: black;
+    border: none;
+}
+
+/* >>>>>>> Home Page <<<<<<<< */
+/* This section is for the home page */
+/* Styling for the hero banner on the homepage */
+.homepage-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroimage {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 15px;
+    background-color: black;
+    align-items: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+/*the ID for the homepage hero image*/
+.imagehero {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+/*This is for the homepage about us section*/
+.homepage-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* for mobile responsive design drops the image below the about us text */
+    color: black;
+}
+.home-aboutustext {
+    text-align: left;
+    margin: 10px;
+    background-color: rgb(222, 222, 238);
+    border-radius: 15px;
+    padding: 20px;
+}
+.home-aboutustext h1 {
+    text-align: center;
+}
+
+/* >>>>>>> Blog Page <<<<<<<< */
+/*This section of css is for the blog page elements */
+article {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: black;
+    width: auto;
+}
+.blog {
+padding: 20px;
+}
+.blogimage {
+    padding: 5px;
+}
+.blogtext {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(222, 222, 238);
+    border-radius: 15px;
+}
+#row3 {
+    display: none;
+}
+#loadMore {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: 1px solid #000;
+    background-color: #f5f5f5;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#progressBarContainer {
+    width: 25%;
+    background-color: #D3D3D3; /* Lighter purple (change as needed) */
+    border-radius: 5px;
+    margin: 10px auto;
+}
+#progressBar {
+    width: 75%;
+    height: 20px;
+    background-color: #800080;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+/* Position relative is needed for positioning the search and filter containers as absolute */
+.heroimageblog {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.search-container {
+    position: absolute;
+    top: 55%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+}
+.filter-container {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#blogSearch {
+    width: 20vw;
+    padding: 10px;
+    border: 5px solid #4b2c85;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+#blogFilter {
+    width: 20vw;
+    padding: 10px;
+    border: 5px solid #4b2c85;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+.blog-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+.blog-headline h1 {
+    text-align: center;
+}
+.blog-headline hr {
+    width: 50%;
+}
+/* Different background colors for different tags, if desired */
+.blog-tag.recipes { 
+    background-color: #450a5c79;
+}
+.blog-tag.cultural { 
+    background-color: #dc3545;
+}
+/* Hides the label on the text bar used for AIRA purposes */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* >>>>>>> Menu Page <<<<<<<< */
+/* >>>> This styles the container that hold text and image elements <<<< */
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+.menu-selection {
+    width: 20vw;
+    height: 25vh;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(222, 222, 238);
+}
+.menu-list {
+    width: 40vw;
+    height: auto;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(181, 181, 189);
+}
+/* This is flex box with the menu-container flex box, it allows the image portion to display as a column on desktop */
+.menu-images-container {
+    display: flex;
+    flex-direction: column;
+}
+/* This fits the food image to the menu image container stopping overflow */
+.menu-images-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+/* >>>> Menu images styling <<<< */
+.appetizers-food-image1 {
+    width: 400px;
+    height: 450px;
+    margin: 5px;
+}
+.appetizers-food-image2 {
+    width: 400px;
+    height: 450px;
+    margin: 5px;
+}
+.mains-food-image1 {
+    width: 400px;
+    height: 500px;
+    margin: 5px;
+}
+.mains-food-image2 {
+    width: 400px;
+    height: 500px;
+    margin: 5px;
+}
+.dessert-food-image1 {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+.dessert-food-image2 {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+.wine-red-food-image1 {
+    width: 400px;
+    height: 600px;
+    margin: 5px;
+}
+.wine-red-food-image2 {
+    width: 400px;
+    height: 600px;
+    margin: 5px;
+}
+.wine-white-food-image1 {
+    width: 400px;
+    height: 600px;
+    margin: 5px;
+}
+.wine-white-food-image2 {
+    width: 400px;
+    height: 600px;
+    margin: 5px;
+}
+.beer-food-image1 {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+.beer-food-image2 {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+.drink-food-image1 {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+.drink-food-image2 {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+.menu-headline h1 {
+    text-align: center;
+}
+.menu-headline hr {
+    width: 50%;
+}
+/*>>>> Text styling for menu page <<<<*/
+/* Styled to hide the bullet poits */
+.menu-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+/* Style the list items inside the food menu to give some extra space between lines */
+.menu-list li {
+    margin-bottom: 1.25em;
+}
+.menu-list li hr {
+    width: 10vw;
+}
+
+.menu-navigation a {
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu-navigation ul {
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/* >>>> Contact page <<<< */
+/* This is the flex box that holds the text and ifram elements */
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+.contact-details {
+    width: 20vw;
+    height: auto;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(222, 222, 238);
+}
+/* used for styling the google map */
+.google-map-container {
+    width: auto;
+    height: auto;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+/* Styled to hide the bullet poits */
+.contact-details ul{
+    list-style-type: none;
+}
+/* Footer will not stay at the bottom of the desktop without this */
+.contact-footer {
+    position: fixed;
+}
+
+/* >>>> Hours Page <<<< */
+/* This is the flex box that holds the text and ifram elements */
+/* Didn't need to do any styling of the calendar as google let me set the width and height */
+.hours-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 50vw;
+}
+.hours-details {
+    flex: auto;
+    align-items: center;
+    background-color: rgb(222, 222, 238);
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 10px;
+    width: auto;
+}
+.hours-details ul{
+    list-style-type: none;
+}
+
+/* >>>> Booking Page <<<< */
+/* Booking form flex box */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+/* set a border as this can take a second to load lets you know something will go here */
+.booking-form iframe {
+    display: block;
+    margin: auto;
+    border: solid 2px black;
+}
+/* >>>> Staff Portal page <<<< */
+.roster-header h2 {
+    text-align: center;
+    font-size: 1.2em;
+}
+.roster-divider hr {
+    width: 50vw;
+    height: 0.1em;
+    background-color: black;
+}
+.parent-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.top-fields-container {
+    display: flex;
+    flex-direction: column;
+}
+.staff-member {
+    display: flex;
+    flex-direction: column;
+}
+.day-field {
+    background-color: rgb(146, 146, 146);
+    height: 4vh;
+    width: 10vw;
+    border: solid 2px black;
+    text-align: center;
+}
+.staff-name, .work-hours {
+    background-color: rgb(255, 255, 255);
+    height: 4vh;
+    width: 10vw;
+    border: solid 2px black;
+    text-align: center;
+}
+.parent-container-mobile {
+    display: none;
+}
+
+/* >>>>>>> Mobile responsive <<<<<<<< */
+/* For mobile responsive design helps to resize for smaller screens */
+@media screen and (max-width: 600px) { 
+    /* >>> Global mobile responsive settings << */
+    .hamburger {
+        display: flex;
+    }
+    header .navbar ul, footer .navbar ul {
+        display: none;
+    }
+    header .navbar.active ul, footer .navbar.active ul {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+    }
+    /* This ensures that the copyright text displays below the footer mega menu */
+    .footer-text {
+        order: 2;
+        width: 100%;
+        margin-top: 10px;
+    }
+    /* Update styles for the navbar in the footer to handle expanded menu */
+    footer .navbar.active ul {
+        display: flex;
+        flex-direction: column;
+    }
+    /* >>>> Home page and blog shared hero image <<<< */
+    .heroimage {
+        position: relative;
+        overflow: hidden;
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .heroimage img {
+        height: auto;
+        object-fit: cover;
+        object-position: center center; /* Adjusts the focal point of the image */
+    }
+    /* >>>> Menu page mobile responsive design <<<< */
+    /* Controls the menu selection container */
+    .menu-container {
+        flex-direction: column;
+        max-width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .menu-selection {
+        width: auto;
+        height: auto; 
+        margin: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    /* controls the food menu items */
+    .menu-list {
+        margin: 0px;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    /* styles images from the menu page */
+    .appetizers-food-image1, .appetizers-food-image2, .mains-food-image1, .mains-food-image2, .dessert-food-image1, .dessert-food-image2,
+    .wine-red-food-image1,.wine-red-food-image2, .wine-white-food-image1,.wine-white-food-image2, .beer-food-image1, .drink-food-image1, .drink-food-image2 {
+        max-width: 100%;
+        height: auto;
+        margin: 0px;
+        margin-bottom: 5px;
+    }
+
+    /* >>>> Blog page mobile responsive design <<<< */
+    .blog {
+        max-width: 100%;
+    }
+    .search-container, .filter-container {
+        width: 90vw;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%); /* This adjusts horizontal centering */
+    }
+    /* sets where the text box and filter box position overlaying the hero image */
+    .search-container {
+        bottom: 55%;
+    }
+    .filter-container {
+        bottom: 35%;
+    }
+    #blogSearch, #blogFilter {
+        width: 100%;
+        padding: 10px;
+    }
+    /* Positioning the blog thumbnails for mobile as a column */
+    .blogimage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    .blogimage img {
+        width: 100vw;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /* >>>> Hours page mobile responsive design <<<< */
+    /* so the footer is no longer fixed */
+    .hours-footer{
+        position:relative;
+    }
+    /* Positioning elements as column instead of a row*/
+    .hours-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .hours-details {
+        min-width: 90vw;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    .google-calendar-container {
+        height: 50vh;
+        overflow: auto;
+    }
+    .google-calendar-container iframe {
+        width: 90vw;
+        height: 100%;
+    }
+    /* >>>> Booking page <<<< */
+    .booking-form {
+        padding-top: 0;
+        height: 50vh;
+        overflow: auto;
+    }
+    .booking-form iframe {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        border: none;
+    }
+    /* >>>> Contact page <<<< */
+    /* so the footer is no longer fixed */
+    .contact-footer {
+        position: relative;
+    }
+    /* Positioning elements as column instead of a row*/
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .contact-details {
+        min-width: 90vw;
+    }
+    /* stops the google elements from overflowing to the right means no horizontal scrolling */
+    .google-map-container {
+        padding-top: 0;
+        height: 50vh;
+        overflow: auto;
+    }
+    .google-map-container iframe {
+        width: 90vw;
+        height: 100%;
+    }
+    /* >>>> Staff Portal <<<< */
+    /* hiding the desktop version of the staff roster */
+    .parent-container, .top-fields-container, .staff-member {
+        display: none;
+    }
+    /* Styling for the mobile version so it displays as cards */
+    .parent-container-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 2vh;
+    }
+    .mobile-roster {
+        display: flex;
+        flex-direction: row;
+    }
+    .top-fields-container-mobile, .staff-member-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    .name-field, .day-field {
+        background-color: rgb(146, 146, 146);
+        height: 5vh;
+        width: 30vw;
+        border: solid 2px black;
+        text-align: center;
+    }
+    .staff-name, .work-hours {
+        background-color: rgb(255, 255, 255);
+        height: 5vh;
+        width: 30vw;
+        border: solid 2px black;
+        text-align: center;
+    }
+}

@@ -1,0 +1,6 @@
+<Files "menu.html">
+AuthName "Restricted Access"
+AuthType Basic
+AuthUserFile "C:/Apache24/htdocs/.htpasswd"
+Require valid-user
+</Files>
