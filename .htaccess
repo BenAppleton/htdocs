@@ -1,4 +1,4 @@
-<Files "menu.html">
+<Files "staffportal.html">
 AuthName "Restricted Access"
 AuthType Basic
 AuthUserFile "C:/Apache24/htdocs/.htpasswd"
