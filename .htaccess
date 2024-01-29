@@ -1,6 +1,6 @@
 <Files "staffportal.html">
 AuthName "Restricted Access"
 AuthType Basic
-AuthUserFile "C:/Apache24/htdocs/.htpasswd"
+AuthUserFile "C:/Apache24/htdocs/private/.htpasswd"
 Require valid-user
 </Files>
