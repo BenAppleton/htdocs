@@ -514,6 +514,25 @@ padding: 20px;
 .parent-container-mobile {
     display: none;
 }
+/* contact details portion */
+.staff-contact-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 75vw;
+    margin-left: 12vw;
+}
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(228, 147, 147);
+    height: 25vh;
+    width: 15vw;
+    border: solid 2px black;
+    text-align: center;
+    margin: 5px;
+}
 
 /* >>>>>>> Mobile responsive <<<<<<<< */
 /* For mobile responsive design helps to resize for smaller screens */
@@ -717,15 +736,28 @@ padding: 20px;
     .name-field, .day-field {
         background-color: rgb(146, 146, 146);
         height: 5vh;
-        width: 30vw;
+        width: 40vw;
         border: solid 2px black;
         text-align: center;
     }
     .staff-name, .work-hours {
         background-color: rgb(255, 255, 255);
         height: 5vh;
-        width: 30vw;
+        width: 40vw;
         border: solid 2px black;
         text-align: center;
+    }
+    .staff-contact-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2vh;
+    }
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+        width: auto;
     }
 }
