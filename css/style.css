@@ -527,7 +527,7 @@ padding: 20px;
     display: flex;
     flex-direction: column;
     background-color: rgb(228, 147, 147);
-    height: 25vh;
+    height: auto;
     width: 15vw;
     border: solid 2px black;
     text-align: center;
