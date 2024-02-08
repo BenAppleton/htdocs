@@ -3,6 +3,8 @@ This README provides guidance on configuring Apache server settings for optimal 
 Please note that in a real application, the htpasswrd would not be located inside the htdocs of this directory, instead it would be located in the Apatche24 folder.
 I have located this file in a folder called private within the htdocs file so the marker can compile and test that htaccess works without making any changes.
 I have included a robots.txt that would help to prevent web crawlers from accessing or indexing the contents of the private folder.
+The staffportal.html file is not located in the private folder along with .htpasswrd because if this were a actual hosted website and the private folder
+was located outside of the directory it would not be served by the web server and therefore cannot be accessed through a browser.
 
 In a real world application the private folder would be located in the Apatche24 folder and the htaccess file would read as below.
 
